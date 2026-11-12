@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#17151C"
+
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+
+        <!-- ==================================================== -->
+        <!-- TITLE -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:id="@+id/tvClaimTitle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Claim Item"
+
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- ITEM TYPE -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:id="@+id/tvClaimItemType"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="LOST ITEM"
+
+            android:textColor="#90CAF9"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- ITEM NAME -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:id="@+id/tvClaimItemName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+
+            android:text="Item Name"
+
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- INFORMATION -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardBackgroundColor="#24212C"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Claim Information"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvClaimInfo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:text="Please provide information that can help the item owner verify your claim."
+
+                    android:textColor="#C5C2CA"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ==================================================== -->
+        <!-- CLAIM MESSAGE LABEL -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            android:text="Why is this your item?"
+
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- CLAIM MESSAGE -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilClaimMessage"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:hint="Enter details to prove ownership"
+
+            app:boxBackgroundColor="#24212C"
+            app:boxStrokeColor="#FFFFFF"
+            app:counterEnabled="true"
+            app:counterMaxLength="1000"
+            app:hintTextColor="#C5C2CA">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etClaimMessage"
+
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                android:gravity="top|start"
+
+                android:inputType="textMultiLine|textCapSentences"
+
+                android:maxLength="1000"
+
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8F8B95"
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- ==================================================== -->
+        <!-- SUBMIT BUTTON -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitClaim"
+
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+
+            android:layout_marginTop="24dp"
+
+            android:text="Submit Claim"
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+
+            app:cornerRadius="16dp" />
+
+
+        <!-- ==================================================== -->
+        <!-- PROGRESS -->
+        <!-- ==================================================== -->
+
+        <ProgressBar
+            android:id="@+id/progressClaim"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="16dp"
+
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

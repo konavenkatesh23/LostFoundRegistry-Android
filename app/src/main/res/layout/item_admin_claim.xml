@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!-- ===================================================== -->
+        <!-- CLAIM ID -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Claim #1"
+            android:textColor="#1565C0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- ITEM NAME -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Wallet"
+            android:textColor="#1A1A1A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- ITEM TYPE -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimItemType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LOST ITEM"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- DIVIDER -->
+        <!-- ===================================================== -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="#DDDDDD" />
+
+
+        <!-- ===================================================== -->
+        <!-- CLAIMANT -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Claimant: User"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- PHONE -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimantPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Phone: 9876543210"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <!-- ===================================================== -->
+        <!-- EMAIL -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimantEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Email: user@example.com"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <!-- ===================================================== -->
+        <!-- OWNER -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Item Owner: Owner"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- CLAIM MESSAGE -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#F5F7FA"
+            android:padding="12dp"
+            android:text="Claim message"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
+
+
+        <!-- ===================================================== -->
+        <!-- STATUS -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvAdminClaimStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Status: PENDING"
+            android:textColor="#E65100"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- BUTTONS -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+
+            <!-- APPROVE -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnApproveClaim"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="Approve"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:cornerRadius="12dp" />
+
+
+            <!-- REJECT -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRejectClaim"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="Reject"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:cornerRadius="12dp"
+                app:strokeWidth="1dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

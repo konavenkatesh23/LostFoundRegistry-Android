@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:background="#18161D">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+
+        <!-- ==================================================== -->
+        <!-- TITLE -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Claim Item"
+
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- DESCRIPTION -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Enter information that helps the item owner verify your claim."
+
+            android:textColor="#BDB9C4"
+            android:textSize="15sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- ITEM CARD -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            app:cardBackgroundColor="#24212C"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="3dp"
+
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="18dp">
+
+
+                <!-- ============================================ -->
+                <!-- ITEM NAME LABEL -->
+                <!-- ============================================ -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Item"
+
+                    android:textColor="#9E9AA5"
+                    android:textSize="14sp" />
+
+
+                <!-- ============================================ -->
+                <!-- ITEM NAME -->
+                <!-- ============================================ -->
+
+                <TextView
+                    android:id="@+id/tvItemName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="4dp"
+
+                    android:text="Item Name"
+
+                    android:textColor="#1976D2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <!-- ============================================ -->
+                <!-- ITEM TYPE -->
+                <!-- ============================================ -->
+
+                <TextView
+                    android:id="@+id/tvItemType"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Claiming: LOST"
+
+                    android:textColor="#C5C2CA"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ==================================================== -->
+        <!-- CLAIM MESSAGE LABEL -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="28dp"
+
+            android:text="Why do you believe this item belongs to you?"
+
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- CLAIM MESSAGE -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:hint="Claim message"
+
+            app:boxBackgroundColor="#24212C"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxStrokeColor="#FFFFFF">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/etClaimMessage"
+
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+
+                android:gravity="top|start"
+
+                android:inputType="textCapSentences|textMultiLine"
+
+                android:maxLength="1000"
+
+                android:padding="14dp"
+
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9E9AA5"
+
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- ==================================================== -->
+        <!-- HELPER TEXT -->
+        <!-- ==================================================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Example: Mention identifying details that only the real owner would know."
+
+            android:textColor="#9E9AA5"
+            android:textSize="13sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- SUBMIT CLAIM -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnSubmitClaim"
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginTop="28dp"
+
+            android:text="Submit Claim"
+
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:cornerRadius="14dp" />
+
+
+        <!-- ==================================================== -->
+        <!-- CANCEL -->
+        <!-- ==================================================== -->
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnCancel"
+
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Cancel"
+
+            android:textSize="16sp"
+
+            app:cornerRadius="14dp"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

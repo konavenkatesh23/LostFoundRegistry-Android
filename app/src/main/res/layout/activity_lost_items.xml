@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#17151B"
+
+    tools:context=".LostItemsActivity">
+
+    <!-- ======================================================== -->
+    <!-- Toolbar -->
+    <!-- ======================================================== -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#CDB4F9"
+
+        app:title="Search Items"
+        app:titleTextColor="@android:color/white" />
+
+
+    <!-- ======================================================== -->
+    <!-- Search Area -->
+    <!-- ======================================================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
+
+        <!-- Search Box -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchInputLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Search item by name"
+
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+
+            app:startIconDrawable="@android:drawable/ic_menu_search">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
+
+                android:textSize="16sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Search Information -->
+
+        <TextView
+            android:id="@+id/tvSearchInfo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Loading lost and found items..."
+
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp" />
+
+    </LinearLayout>
+
+
+    <!-- ======================================================== -->
+    <!-- Loading -->
+    <!-- ======================================================== -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+
+        android:layout_marginTop="12dp"
+
+        android:visibility="gone" />
+
+
+    <!-- ======================================================== -->
+    <!-- Empty -->
+    <!-- ======================================================== -->
+
+    <TextView
+        android:id="@+id/tvEmpty"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:padding="24dp"
+
+        android:text="No items found."
+
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+
+        android:visibility="gone" />
+
+
+    <!-- ======================================================== -->
+    <!-- Search Results -->
+    <!-- ======================================================== -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearchItems"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        android:clipToPadding="false"
+
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

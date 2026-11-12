@@ -1,0 +1,18 @@
+# Gradle generated files
+.gradle/
+**/build/
+
+# Android Studio settings
+.idea/
+*.iml
+
+# Local Android SDK configuration
+local.properties
+
+# JVM crash logs
+hs_err_pid*.log
+replay_pid*.log
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true"
+    android:background="#F5F7FA">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="24dp">
+
+
+        <!-- ===================================================== -->
+        <!-- HEADER                                                -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:paddingTop="20dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="ADMIN PANEL"
+
+                android:textColor="#1565C0"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                android:letterSpacing="0.08" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:text="Admin Dashboard"
+
+                android:textColor="#1A1A1A"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:id="@+id/tvAdminWelcome"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+
+                android:text="Welcome, Administrator"
+
+                android:textColor="#555555"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- ADMIN INFORMATION CARD                                -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardBackgroundColor="#24212B"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            app:strokeColor="#3A3544"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Administrator Access"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Manage claims and registered users of the Lost-and-Found Registry."
+
+                    android:textColor="#D8D3E0"
+                    android:textSize="14sp"
+
+                    android:lineSpacingExtra="3dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- CLAIM MANAGEMENT                                      -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardBackgroundColor="#24212B"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            app:strokeColor="#3A3544"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Claim Management"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Review pending claims and approve or reject them after verification."
+
+                    android:textColor="#D8D3E0"
+                    android:textSize="14sp"
+
+                    android:lineSpacingExtra="3dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+
+                    android:id="@+id/btnPendingClaims"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="18dp"
+
+                    android:minHeight="52dp"
+
+                    android:text="Manage Pending Claims"
+
+                    android:textColor="#3F2366"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    app:backgroundTint="#D0B3FF"
+                    app:cornerRadius="12dp"
+                    app:rippleColor="#B994F0" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- USER MANAGEMENT                                       -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="20dp"
+
+            app:cardBackgroundColor="#24212B"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            app:strokeColor="#3A3544"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="User Management"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="View registered users and remove accounts that are not trusted."
+
+                    android:textColor="#D8D3E0"
+                    android:textSize="14sp"
+
+                    android:lineSpacingExtra="3dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+
+                    android:id="@+id/btnUserManagement"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="18dp"
+
+                    android:minHeight="52dp"
+
+                    android:text="Manage Users"
+
+                    android:textColor="#3F2366"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    app:backgroundTint="#D0B3FF"
+                    app:cornerRadius="12dp"
+                    app:rippleColor="#B994F0" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- SECURITY INFORMATION                                  -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="24dp"
+
+            app:cardBackgroundColor="#24212B"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            app:strokeColor="#3A3544"
+            app:strokeWidth="1dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Security"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="6dp"
+
+                    android:text="Only accounts with the ADMIN role can access administrative claim and user management."
+
+                    android:textColor="#D8D3E0"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ===================================================== -->
+        <!-- LOGOUT                                                -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnAdminLogout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:minHeight="52dp"
+
+            android:text="Logout"
+
+            android:textColor="#3F2366"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:backgroundTint="#D0B3FF"
+            app:cornerRadius="12dp"
+            app:rippleColor="#B994F0"
+            app:strokeColor="#8E68B7"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

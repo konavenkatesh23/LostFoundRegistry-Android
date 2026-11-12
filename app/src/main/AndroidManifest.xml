@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- ========================================================= -->
+    <!-- INTERNET -->
+    <!-- ========================================================= -->
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+
+    <!-- ========================================================= -->
+    <!-- APPLICATION -->
+    <!-- ========================================================= -->
+
+    <application
+
+        android:allowBackup="true"
+
+        android:dataExtractionRules="@xml/data_extraction_rules"
+
+        android:fullBackupContent="@xml/backup_rules"
+
+        android:icon="@mipmap/ic_launcher"
+
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.LostFoundRegistry"
+
+        android:usesCleartextTraffic="true">
+
+
+        <!-- ===================================================== -->
+        <!-- SPLASH -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- ===================================================== -->
+        <!-- IMAGE VIEWER -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".ImageViewerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.LostFoundRegistry" />
+
+
+        <!-- ===================================================== -->
+        <!-- AUTHENTICATION -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".OTPVerificationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- USER DASHBOARD -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- ADMIN DASHBOARD -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- ADMIN CLAIM MANAGEMENT -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".AdminClaimsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- ADMIN USER MANAGEMENT -->
+        <!-- ===================================================== -->
+        <!--
+            Used for:
+            - Viewing all registered users
+            - Viewing user information
+            - Opening a user's Lost & Found reports
+            - Deleting USER accounts
+
+            ADMIN accounts are protected from deletion.
+        -->
+
+        <activity
+            android:name=".AdminUserManagementActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- ADMIN USER REPORTS -->
+        <!-- ===================================================== -->
+        <!--
+            Used for:
+            - Viewing selected user's Lost reports
+            - Viewing selected user's Found reports
+            - Deleting individual Lost reports
+            - Deleting individual Found reports
+
+            Opened by tapping a user inside
+            AdminUserManagementActivity.
+        -->
+
+        <activity
+            android:name=".AdminUserReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- PROFILE -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- ITEMS -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".LostItemsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".MyReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".EditReportActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".EditFoundReportActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ReportLostActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ReportFoundActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!-- ===================================================== -->
+        <!-- MAIN -->
+        <!-- ===================================================== -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

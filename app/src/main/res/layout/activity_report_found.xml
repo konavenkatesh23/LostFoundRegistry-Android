@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="#15121A">
+
+
+    <!-- ======================================================== -->
+    <!-- Toolbar -->
+    <!-- ======================================================== -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="#CDB4F9"
+
+        app:title="Report Found Item"
+        app:titleTextColor="@android:color/white" />
+
+
+    <!-- ======================================================== -->
+    <!-- Scroll Content -->
+    <!-- ======================================================== -->
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="20dp">
+
+
+            <!-- ================================================= -->
+            <!-- Item Name -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="14dp"
+
+                android:hint="Item Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etItemName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Category -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="14dp"
+
+                android:hint="Category">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etCategory"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Description -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="14dp"
+
+                android:hint="Description">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDescription"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+
+                    android:gravity="top"
+
+                    android:inputType="textCapSentences|textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Color -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="14dp"
+
+                android:hint="Color">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etColor"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Location Found -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="14dp"
+
+                android:hint="Location Found">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etLocationFound"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="textCapSentences" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Date Found -->
+            <!-- ================================================= -->
+            <!--
+                IMPORTANT:
+                The EditText does NOT have a hint.
+
+                Only TextInputLayout has "Date Found".
+                This prevents:
+                    Date Found
+                    YYYY-MM-DD
+                from overlapping.
+            -->
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/dateFoundLayout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="18dp"
+
+                android:hint="Date Found"
+
+                app:endIconMode="custom"
+                app:endIconDrawable="@android:drawable/ic_menu_my_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/etDateFound"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- ================================================= -->
+            <!-- Image Title -->
+            <!-- ================================================= -->
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Item Image"
+
+                android:textColor="@android:color/white"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:layout_marginBottom="10dp" />
+
+
+            <!-- ================================================= -->
+            <!-- Selected Image -->
+            <!-- ================================================= -->
+
+            <ImageView
+
+                android:id="@+id/ivSelectedImage"
+
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+
+                android:background="#29252F"
+
+                android:contentDescription="Selected found item image"
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/ic_launcher_foreground" />
+
+
+            <!-- ================================================= -->
+            <!-- Select Image -->
+            <!-- ================================================= -->
+
+            <Button
+
+                android:id="@+id/btnSelectImage"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:text="Select Image" />
+
+
+            <!-- ================================================= -->
+            <!-- Progress -->
+            <!-- ================================================= -->
+
+            <ProgressBar
+
+                android:id="@+id/progressBar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginTop="18dp"
+
+                android:visibility="gone" />
+
+
+            <!-- ================================================= -->
+            <!-- Submit -->
+            <!-- ================================================= -->
+
+            <Button
+
+                android:id="@+id/btnSubmit"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="18dp"
+
+                android:layout_marginBottom="30dp"
+
+                android:text="Report Found Item"
+
+                android:textSize="17sp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

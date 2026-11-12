@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="14dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!-- ===================================================== -->
+        <!-- USER HEADER -->
+        <!-- ===================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <!-- ================================================= -->
+            <!-- PROFILE IMAGE / INITIAL -->
+            <!-- ================================================= -->
+
+            <FrameLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+
+                <!-- ============================================= -->
+                <!-- ACTUAL PROFILE PHOTO -->
+                <!-- ============================================= -->
+
+                <ImageView
+                    android:id="@+id/ivUserProfile"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:background="#E3F2FD"
+
+                    android:scaleType="centerCrop"
+
+                    android:visibility="gone"
+
+                    android:contentDescription="User profile picture" />
+
+
+                <!-- ============================================= -->
+                <!-- FALLBACK INITIAL -->
+                <!-- ============================================= -->
+
+                <TextView
+                    android:id="@+id/tvUserInitial"
+
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:background="#E3F2FD"
+
+                    android:gravity="center"
+
+                    android:text="U"
+                    android:textColor="#1565C0"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+
+            <!-- ================================================= -->
+            <!-- USER NAME + ROLE -->
+            <!-- ================================================= -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+                <!-- USER NAME -->
+
+                <TextView
+                    android:id="@+id/tvUserName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="User Name"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+
+                <!-- USER ROLE -->
+
+                <TextView
+                    android:id="@+id/tvUserRole"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="4dp"
+
+                    android:text="USER"
+
+                    android:textColor="#42A5F5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ===================================================== -->
+        <!-- DIVIDER -->
+        <!-- ===================================================== -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="14dp"
+
+            android:background="#D1D5DB" />
+
+
+        <!-- ===================================================== -->
+        <!-- EMAIL -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Email"
+
+            android:textColor="#F1F5F9"
+            android:textSize="14sp"
+
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+
+        <!-- ===================================================== -->
+        <!-- PHONE -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvUserPhone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Phone"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp" />
+
+
+        <!-- ===================================================== -->
+        <!-- ADDRESS -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvUserAddress"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Address"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp"
+
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+
+        <!-- ===================================================== -->
+        <!-- STATUS -->
+        <!-- ===================================================== -->
+
+        <TextView
+            android:id="@+id/tvUserStatus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:text="ACTIVE"
+
+            android:textColor="#66BB6A"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <!-- ===================================================== -->
+        <!-- DELETE BUTTON -->
+        <!-- ===================================================== -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteUser"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:minHeight="48dp"
+
+            android:text="Delete User"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+
+            android:textColor="#B71C1C"
+
+            app:cornerRadius="12dp"
+            app:strokeColor="#B71C1C"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

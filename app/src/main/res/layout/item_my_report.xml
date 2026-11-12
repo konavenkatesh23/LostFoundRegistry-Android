@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/cardItem"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="8dp"
+
+    app:cardBackgroundColor="#24212B"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="4dp"
+    app:strokeColor="#E8E1F0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+
+        <!-- ==================================================== -->
+        <!-- Image -->
+        <!-- ==================================================== -->
+
+        <ImageView
+
+            android:id="@+id/ivItemImage"
+
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+
+            android:background="#302D38"
+
+            android:contentDescription="Item image"
+
+            android:scaleType="centerCrop" />
+
+
+        <!-- ==================================================== -->
+        <!-- Item Name -->
+        <!-- ==================================================== -->
+
+        <TextView
+
+            android:id="@+id/tvItemName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="18dp"
+
+            android:text="Item Name"
+
+            android:textColor="#1976D2"
+
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+
+        <!-- ==================================================== -->
+        <!-- Category -->
+        <!-- ==================================================== -->
+
+        <TextView
+
+            android:id="@+id/tvCategory"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:text="Category :"
+
+            android:textColor="#D8D3DD"
+
+            android:textSize="20sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- Color -->
+        <!-- ==================================================== -->
+
+        <TextView
+
+            android:id="@+id/tvColor"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Color :"
+
+            android:textColor="#D8D3DD"
+
+            android:textSize="20sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- Location -->
+        <!-- ==================================================== -->
+
+        <TextView
+
+            android:id="@+id/tvLocation"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Location :"
+
+            android:textColor="#D8D3DD"
+
+            android:textSize="20sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- Date -->
+        <!-- ==================================================== -->
+
+        <TextView
+
+            android:id="@+id/tvDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Date :"
+
+            android:textColor="#D8D3DD"
+
+            android:textSize="20sp" />
+
+
+        <!-- ==================================================== -->
+        <!-- Buttons -->
+        <!-- ==================================================== -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal"
+
+            android:weightSum="2">
+
+
+            <!-- ================================================= -->
+            <!-- Edit -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnEdit"
+
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+
+                android:layout_marginEnd="8dp"
+
+                android:layout_weight="1"
+
+                android:text="Edit"
+
+                android:textColor="#4A3A70"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                app:backgroundTint="#CDB4F9"
+                app:cornerRadius="35dp" />
+
+
+            <!-- ================================================= -->
+            <!-- Delete -->
+            <!-- ================================================= -->
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnDelete"
+
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+
+                android:layout_marginStart="8dp"
+
+                android:layout_weight="1"
+
+                android:text="Delete"
+
+                android:textColor="@android:color/white"
+
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+
+                app:backgroundTint="#F44336"
+                app:cornerRadius="35dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

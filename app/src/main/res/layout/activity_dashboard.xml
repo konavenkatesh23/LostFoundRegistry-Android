@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F5F7FB"
+    android:fillViewport="true"
+
+    tools:context=".DashboardActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- ========================================================= -->
+        <!-- HEADER                                                    -->
+        <!-- ========================================================= -->
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Welcome 👋"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="#0D47A1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Lost &amp; Found Registry"
+            android:textSize="16sp"
+            android:textColor="#666666"
+
+            android:layout_marginTop="4dp" />
+
+
+        <!-- ========================================================= -->
+        <!-- WELCOME CARD                                              -->
+        <!-- ========================================================= -->
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="#1565C0">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Lost &amp; Found Registry"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="22sp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Manage Lost and Found Items Easily"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+
+                    android:layout_marginTop="8dp" />
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- ========================================================= -->
+        <!-- QUICK ACTIONS                                             -->
+        <!-- ========================================================= -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            android:text="Quick Actions"
+            android:textColor="#0D47A1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+
+            <!-- ===================================================== -->
+            <!-- REPORT LOST                                            -->
+            <!-- ===================================================== -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/cardLost"
+
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+
+                android:layout_columnWeight="1"
+
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="📦"
+                        android:textSize="32sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+
+                        android:text="Report Lost"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ===================================================== -->
+            <!-- REPORT FOUND                                           -->
+            <!-- ===================================================== -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/cardFound"
+
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+
+                android:layout_columnWeight="1"
+
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="🎒"
+                        android:textSize="32sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+
+                        android:text="Report Found"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ===================================================== -->
+            <!-- SEARCH ITEMS                                           -->
+            <!-- ===================================================== -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/cardSearch"
+
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+
+                android:layout_columnWeight="1"
+
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="🔍"
+                        android:textSize="32sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+
+                        android:text="Search Items"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!-- ===================================================== -->
+            <!-- MY REPORTS                                             -->
+            <!-- ===================================================== -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/cardReports"
+
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+
+                android:layout_columnWeight="1"
+
+                app:cardCornerRadius="18dp"
+                app:cardElevation="6dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="📋"
+                        android:textSize="32sp" />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+
+                        android:text="My Reports"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </GridLayout>
+
+
+        <!-- ========================================================= -->
+        <!-- ACCOUNT                                                    -->
+        <!-- ========================================================= -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+
+            android:text="Account"
+            android:textColor="#0D47A1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:orientation="horizontal">
+
+
+            <!-- PROFILE -->
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnProfile"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+
+                android:text="Profile"
+                android:textAllCaps="false"
+
+                app:icon="@android:drawable/ic_menu_myplaces" />
+
+
+            <!-- LOGOUT -->
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btnLogout"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+
+                android:text="Logout"
+                android:textAllCaps="false"
+
+                app:icon="@android:drawable/ic_lock_power_off" />
+
+
+        </LinearLayout>
+
+
+        <!-- ========================================================= -->
+        <!-- FOOTER                                                    -->
+        <!-- ========================================================= -->
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+
+            android:text="© 2026 Lost &amp; Found Registry"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

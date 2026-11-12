@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="14dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <ImageView
+            android:id="@+id/ivReportImage"
+
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+
+            android:scaleType="centerCrop"
+
+            android:contentDescription="Report image"
+
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tvReportItemName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:text="Item Name"
+
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvReportCategory"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Category"
+
+            android:textColor="#42A5F5"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvReportDescription"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Description"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvReportColor"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Color"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvReportLocation"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Location"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvReportDate"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="7dp"
+
+            android:text="Date"
+
+            android:textColor="#D1D5DB"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvReportStatus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:text="LOST"
+
+            android:textColor="#66BB6A"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteReport"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:minHeight="48dp"
+
+            android:text="Delete Report"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+
+            android:textColor="#B71C1C"
+
+            app:cornerRadius="12dp"
+            app:strokeColor="#B71C1C"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

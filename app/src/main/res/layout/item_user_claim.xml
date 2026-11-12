@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+
+        <!-- ================================================= -->
+        <!-- ITEM NAME -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimItemName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Item Name"
+
+            android:textColor="#1A1A1A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <!-- ================================================= -->
+        <!-- ITEM TYPE -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimItemType"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+
+            android:text="Claim Type: LOST"
+
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+
+        <!-- ================================================= -->
+        <!-- STATUS -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimStatus"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="14dp"
+
+            android:text="PENDING"
+
+            android:textColor="#F57C00"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- ================================================= -->
+        <!-- STATUS INFORMATION -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimInfo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+
+            android:text="Your claim is pending administrator verification."
+
+            android:textColor="#666666"
+            android:textSize="14sp"
+
+            android:lineSpacingExtra="3dp" />
+
+
+        <!-- ================================================= -->
+        <!-- DIVIDER -->
+        <!-- ================================================= -->
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="#E0E0E0" />
+
+
+        <!-- ================================================= -->
+        <!-- OWNER -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimOwner"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Item Owner: Not available"
+
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <!-- ================================================= -->
+        <!-- OWNER PHONE -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimOwnerPhone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="6dp"
+
+            android:text="Owner Phone: Not available"
+
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+        <!-- ================================================= -->
+        <!-- CLAIM MESSAGE -->
+        <!-- ================================================= -->
+
+        <TextView
+
+            android:id="@+id/tvClaimMessage"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            android:text="Claim message:"
+
+            android:textColor="#555555"
+            android:textSize="14sp"
+
+            android:lineSpacingExtra="3dp" />
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
